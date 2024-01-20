@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Prompt&display=swap');
+body {
+    background-color: #01445e;
+    width: 100%;
+    height: 100vh;
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.input-group {
+    position: relative;
+    top: 130px;
+    width: 100%;
+    font-family: 'Prompt', sans-serif;
+}
+
+table {
+    position: relative;
+    top: 180px;
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+}
+
+table th {
+    background-color: transparent;
+    color: whitesmoke;
+    border-bottom: 4px solid #c56c86;
+}
+
+table td {
+    background-color: transparent;
+    border-bottom: none;
+    color: whitesmoke;
+}
+
+table .data {
+    padding-top: 25px;
+}
+
+button {
+    background-color: #c56c86;
+    color: whitesmoke;
+    border: 3px solid #c56c86;
+}
+
+#add:hover {
+    border: 3px solid #c56c86;
+    background-color: #c56c86;
+}
+
+button:hover {
+    border: 3px solid #c56c86;
+}
+
+#checkbox {
+    border: 2px solid black;
+}
+
+.bi {
+    position: relative;
+    font-size: 35px;
+    color: #c56c86;
+    left: 200px;
+    cursor: pointer;
+    top: 10px;
+}
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .bi {
+        position: relative;
+        left: 400px;
+    }
+}
+
+@media only screen and (min-width:992px) and (max-width:1500px) {
+    .bi {
+        position: relative;
+        left: 550 px;
+    }
+}
+
+@media only screen and (min-width:1500px) {
+    .bi {
+        position: relative;
+        left: 700px;
+    }
+}

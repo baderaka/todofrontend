@@ -1,0 +1,9 @@
+{
+    "/**": {
+        "target": "https://taskk-qyyr.onrender.com",
+        "secure": true,
+        "changeOrigin": true
+
+
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <i class="bi bi-box-arrow-left" (click)="logout()"></i>
+        <div class="card" style="width: 25rem;height: 10rem;">
+            <div class="card-body">
+                <form #form="ngForm" (ngSubmit)="edit(form.value)">
+                    <div class="input-group my-5 py-2">
+                        <input type="text " class="form-control " placeholder="Enter Your Task" name="title" ngModel="title" [(ngModel)]="task.title">
+                        <button type="submit" class="btn btn-dark">ADD</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

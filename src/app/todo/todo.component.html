@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+</head>
+
+<body>
+    <div class="container">
+        <i class="bi bi-box-arrow-left" (click)="logout()"></i>
+        <form #form="ngForm" (ngSubmit)="posttask(form.value)">
+            <div class="input-group ">
+                <input type="text " class="form-control" placeholder="Enter Your Task" name="title" ngModel="title" [(ngModel)]="task.title">
+                <button type="submit" class="btn" id="add">ADD</button>
+            </div>
+        </form>
+        <table class="table table-hover ju">
+            <thead>
+                <tr>
+
+                    <th scope="col" colspan="2">TASK</th>
+
+                    <th scope="col">UPDATE</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let task of taskarray">
+                <tr>
+                    <td colspan="2" class="data">{{task.title}}</td>
+
+                    <td> <button type="button" class="btn  ml-5" [routerLink]="['/edit',task._id]">Edit</button>
+                        <button type="button" class="btn mx-2" (click)="deletetask(task._id)">Delete</button>
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
