@@ -70,6 +70,7 @@ input {
     background-color: transparent;
     color: white;
     cursor: pointer;
+    width: 100%;
 }
 
 input::placeholder {
