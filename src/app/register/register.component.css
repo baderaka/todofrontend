@@ -93,6 +93,7 @@ input:focus {
 @media screen and (max-width:786px) {
     .container .card {
         height: 10rem;
+        width: 20rem;
     }
 }
 
@@ -121,11 +122,5 @@ a {
     a {
         position: relative;
         left: 70px;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .card {
-        width: 20rem;
     }
 }
