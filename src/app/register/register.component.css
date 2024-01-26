@@ -115,3 +115,10 @@ a {
     text-decoration: none;
     color: #c56c86;
 }
+
+@media screen and (max-width:600px) {
+    a {
+        position: relative;
+        left: 70px;
+    }
+}

@@ -38,7 +38,7 @@ body {
     .card {
         position: relative;
         left: auto;
-        width: 25rem;
+        width: 20rem;
     }
 }
 
@@ -50,7 +50,8 @@ input {
 
 @media screen and (max-width:786px) {
     input {
-        width: 80%
+        width: 65%;
+        margin-left: -11px;
     }
 }
 
@@ -58,6 +59,7 @@ input::placeholder {
     color: whitesmoke;
     background-color: transparent;
     font-size: 14px;
+    padding-left: 6px;
 }
 
 input:focus {
